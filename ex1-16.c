@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define MAXLINE 1000
+#define MAXLINE 10000
 
 int cos_getline(char line[], int maxline);
 void copy(char to[], char form[]);

@@ -7,14 +7,12 @@ void copy(char to[], char form[]);
 int main()
 {
 	int len;
-	int max;
 	char line[MAXLINE];
 	char longest[MAXLINE];
+	char *lines[MAXLINE];
 
-	max = 0;
 	while ((len = cos_getline(line, MAXLINE)) > 0)
-		if (len > max) {
-			max = len; 
+		if (len > 80) {
 			copy(longest, line);
 		}
 	if (max > 0)
